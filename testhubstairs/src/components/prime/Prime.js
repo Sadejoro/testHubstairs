@@ -4,6 +4,9 @@ import '../../App.css';
 class Prime extends Component {
     constructor() {
         super();
+        this.state = {
+            userInput: '',
+        }
     };
 
 
@@ -28,9 +31,30 @@ class Prime extends Component {
 
   render() {
     return (
-      <div className="prime">
+    <div>
+      <div className="prime container">
         Prime
       </div>
+
+     <h3>Cette calculatrice permet de trouver n-ième nombre premier</h3>
+     <input 
+        value={this.state.userInput} 
+        type="text" 
+        placeholder="Renseigner un nombre inférieur à 1000"
+        // onChange={/* Recupéré la valeur de l'input */}
+        className="form-control mb-2"
+      />
+      <button 
+        // onClick={/* Renvoyer le résultat sur la page */} 
+        className="btn btn-primary"
+      >
+        Valider
+      </button>
+
+       <div className="lead">
+         {/* Renvoyer nombre premier */}
+        </div>
+    </div>
     );
   }
 }
