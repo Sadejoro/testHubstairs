@@ -15,7 +15,7 @@ class Music extends Component {
 
 
     add (newTrack) {
-        console.log(newTrack);
+        console.log(' morceau ajouté', newTrack);
       if (this.state.playlist.filter(track => track.id === newTrack.id).length === 0) {
         this.setState({
             ...this.state,
@@ -28,7 +28,7 @@ class Music extends Component {
     }
     
     remove (trackToRemove) {
-        console.log('remove', trackToRemove);
+        console.log('morceau supprimé', trackToRemove);
       this.setState({
           ...this.state,
         playlist: this.state.playlist.filter(track => track.id !== trackToRemove.id)
