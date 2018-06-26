@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Music from './components/music/Music';
+import Prime from './components/prime/prime';
+import Graph from './components/graph/graph';
 
 class App extends Component {
   render() {
