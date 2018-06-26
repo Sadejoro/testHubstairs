@@ -1,21 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Link } from 'react-router-dom'
 
-import Music from './components/music/Music';
-import Prime from './components/prime/prime';
-import Graph from './components/graph/graph';
+// import Music from './components/music/Music';
+// import Prime from './components/prime/Prime';
+// import Graph from './components/graph/Graph';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App container">
+       <div className="row">
+        <div className="col-4">
+          <Link to='/music'>
+            Music
+          </Link>
+        </div>
+        <div className="col-4">
+          <Link to='/prime'>
+            Prime
+          </Link>
+        </div>
+        <div className="col-4">
+          <Link to='/graph'>
+            graph
+          </Link>
+        </div>
+      </div>
       </div>
     );
   }

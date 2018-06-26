@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import '../../App.css';
 
 class Music extends Component {
@@ -10,4 +11,4 @@ class Music extends Component {
   }
 }
 
-export default Graph;
+export default Music;

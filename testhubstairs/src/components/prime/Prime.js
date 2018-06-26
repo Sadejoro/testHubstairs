@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import '../../App.css';
 
 class Prime extends Component {
@@ -10,4 +11,4 @@ class Prime extends Component {
   }
 }
 
-export default Graph;
+export default Prime;
